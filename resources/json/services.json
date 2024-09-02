@@ -1,0 +1,20 @@
+[
+	{
+		"index": "01",
+		"title": "Best Quality",
+		"icon": "sun",
+		"body": "Top-notch solar panel installation and maintenance services for residential and commercial properties."
+	},
+	{
+		"index": "02",
+		"title": "Flexibility",
+		"icon": "hand_to_coin",
+		"body": "Flexible subscription-based solar energy plans to make renewable energy accessible and affordable."
+	},
+	{
+		"index": "03",
+		"title": "Track, Monitor & Optimize",
+		"icon": "renewable",
+		"body": "Energy monitoring and management solutions to help you control and optimize your energy usage."
+	}
+]

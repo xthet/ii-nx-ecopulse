@@ -1,0 +1,22 @@
+[
+	{
+		"pfp": "/images/paul_oke.png",
+		"name": "Paul Oke",
+		"title": "CEO"
+	},
+	{
+		"pfp": "/images/litmus.png",
+		"name": "Abdulsalam Lukmon",
+		"title": "IOT Lead"
+	},
+	{
+		"pfp": "/images/oluwalana.png",
+		"name": "Oluwalana Ajayi",
+		"title": "Marketing Lead"
+	},
+	{
+		"pfp": "/images/ifedapo.png",
+		"name": "Ifedapo Oderinde",
+		"title": "Technical Lead"
+	}
+]

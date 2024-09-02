@@ -1,0 +1,44 @@
+@import ./_index
+@import ./_mixins
+
+*
+  box-sizing: border-box
+  padding: 0
+  margin: 0
+  scroll-behavior: smooth
+
+html,
+body
+  font-family: $font-def
+  font-weight: normal
+  font-size: 1rem
+  color: $pri-col
+  background-color: white
+  overflow-x: hidden
+  overflow-y: auto
+  margin: 0
+  width: 100vw
+
+a
+  text-decoration: none
+  color: inherit
+
+*,
+html
+  &::-webkit-scrollbar
+    width: 8px
+  &::-webkit-scrollbar-track
+    background: #09253C
+    border-radius: 0
+  &::-webkit-scrollbar-thumb
+    background: #134F81
+    border-radius: 0
+    &:active
+      background: #134F81
+      border-radius: 0
+    &:hover
+      background: #134F81
+      border-radius: 0
+
+.spn
+  @include fl-cc

@@ -1,0 +1,315 @@
+@import ../styles/_mixins
+
+.home
+  width: 100%
+
+.mhero
+  width: 100%
+  height: 100vh
+  margin-bottom: 2rem
+  padding-top: 6rem
+  background: linear-gradient(0deg, rgba(18, 52, 80, 0.20) 0%, rgba(18, 52, 80, 0.20) 100%), url("/images/twilight_pnl.jpg") lightgray 50% / cover no-repeat
+  background-position: center center
+  @include fl-tl
+  @include fl-c
+  @include fl-sb
+  @include def-pdg
+  @media(min-width: $md)
+    margin-bottom: 4rem
+  @media(min-width: $lg)
+    flex-direction: row
+    @include fl-bl
+    padding-bottom: 2rem
+
+.mh_top
+  @media(min-width: $lg)
+    width: 60%
+
+.mh_hd
+  font-family: $font-def
+  font-weight: 600
+  text-transform: uppercase
+  font-size: 1.5rem
+  width: 100%
+  color: $def-col
+  letter-spacing: 0.08em
+  @media(min-width: $md)
+    font-size: 2.5rem
+  @media(min-width: $lg)
+    font-weight: 700
+    font-size: 3rem
+    line-height: 1.4
+
+.mh_shd
+  margin-top: 0.5rem
+  font-family: $font-ave
+  font-weight: 400
+  letter-spacing: 0.05em
+  font-size: 0.8rem
+  line-height: 1.3
+  color: $def-col
+  @media(min-width: $md)
+    font-size: 1rem
+  @media(min-width: $lg)
+    width: 80%
+    font-size: 1.2rem
+    margin-bottom: 1rem
+
+.mh_sbhd
+  @extend .mh_shd
+  margin: 0 0 1.5rem
+
+.sep
+  height: 4px
+  width: 80%
+  background: $sec-col
+
+.asep
+  @extend .sep
+  margin-top: 1rem
+
+.sc
+  width: 100%
+  @include def-pdg
+  margin-bottom: 6rem
+  @media(min-width: $md)
+    margin-bottom: 7rem
+
+.sc_ttl
+  text-transform: uppercase
+  font-family: $font-ave
+  font-weight: 700
+  letter-spacing: 0.2em
+  font-size: 0.8rem
+  color: $sec-col
+  margin-bottom: 0.5rem
+  @media(min-width: $md)
+    font-size: 0.875rem
+  @media(min-width: $lg)
+    font-size: 0.9rem
+
+.sc_mttl
+  font-size: 2rem
+  font-family: $font-ave
+  font-weight: 500
+  line-height: 1.2
+  margin-bottom: 2rem
+  @media(min-width: $md)
+    width: 60%
+    font-size: 2.5rem
+  @media(min-width: $lg)
+    font-size: 3rem
+
+.svc_cards
+  @include fl-cl
+  @include fl-c
+  gap: 0.5rem
+  @media(min-width: $lg)
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 0.5rem
+    width: 100%
+    margin: 0 auto
+    align-items: start
+
+.svc_card
+  width: 100%
+  @include fl-tl
+  @include fl-c
+  gap: 0.5rem
+  background: $sub-col
+  border-radius: 3px
+  padding: 0.5rem
+  @media(min-width: $lg)
+    align-self: stretch
+
+.svc_hd
+  width: 100%
+  @include fl-cl
+  @include fl-sb
+
+.svc_enu
+  font-family: $font-def
+  font-weight: 500
+  font-size: 2rem
+  colore: $pri-col
+
+.svc_ico
+  width: 2rem
+  height: 2rem
+
+.svc_bhd
+  font-family: $font-ave
+  font-weight: 500
+  font-size: 1.5rem
+  color: $pri-col
+  line-height: 1.3
+  width: 70%
+  margin-bottom: 0.75rem
+  @media(min-width: $lg)
+    width: 90%
+
+.svc_bd
+  font-family: $font-def
+  font-weight: 300
+  letter-spacing: 0.03em
+  font-size: 0.875rem
+  line-height: 1.4
+  @media(min-width: $md)
+    font-size: 0.9rem
+  @media(min-width: $lg)
+    margin-top: auto
+
+.benefits
+  width: 100%
+  padding-left: 0.5rem
+  padding-right: 0.5rem
+  margin-bottom: 6rem
+  @media(min-width: $md)
+    margin-bottom: 7rem
+    padding-left: 1rem
+    padding-right: 1rem
+
+.bnf_bg
+  background: $alt-col
+  border-radius: 1rem
+  padding: 0.5rem
+  @include fl-cl
+  @include fl-c
+  gap: 0.5rem
+  width: 100%
+  @media(min-width: $md)
+    flex-direction: row
+    @include fl-tl
+    gap: 1rem
+    padding: 1rem
+
+.bnf_ill
+  width: 100%
+  position: relative
+  aspect-ratio: 1/1.5
+  max-height: 500px
+  @media(min-width: $md)
+    max-height: 400px
+    flex: 0.5
+    align-self: stretch
+
+.bnf_img_wrp
+  position: absolute
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+  border-radius: 1rem
+  overflow: hidden
+  z-index: 1
+
+.bnf_img
+  width: 100%
+  height: 100%
+  object-fit: cover
+
+.bnf_img_grad
+  @extend .bnf_img_wrp
+  z-index: 2
+  background: linear-gradient(180deg, rgba(252, 151, 37, 0.2) 0%, rgba(9, 37, 60, 0.4) 100%)
+
+.bnf_ill_bd
+  position: relative
+  z-index: 4
+  padding: 1rem
+  width: 100%
+  height: 100%
+  @include fl-tl
+  @include fl-c
+  @include fl-sb
+
+.bnf_hd
+  font-family: $font-ave
+  font-weight: 600
+  font-size: 3.5rem
+  color: $def-col
+
+.bnf_cta_wrp
+  width: 100%
+  @include fl-cr
+
+.bnf_cta
+  border-radius: 25px
+  background: $def-col
+  @include fl-cl
+  gap: 2rem
+  padding: 0.25rem
+  padding-left: 1.1rem
+  @include hover-fade
+  span
+    font-family: $font-def
+    letter-spacing: 0.05em
+    color: $pri-col
+
+.bnf_link
+  background: $sec-col
+  @include fl-cc
+  padding: 0.5rem
+  border-radius: 50%
+
+.link_ico
+  width: 1.2rem
+  height: 1.2rem
+  color: $pri-col
+  stroke-width: 3
+
+.bnf_cards
+  margin-top: 1rem
+  width: 100%
+  @include fl-cl
+  @include fl-c
+  gap: 1rem
+  @media(min-width: $md)
+    flex: 0.5
+    margin-top: 0
+
+.bnf_card
+  width: 100%
+  border-radius: 1rem
+  background: $def-col
+  padding: 0.5rem
+  @media(min-width: $md)
+    padding: 1rem
+
+.bnf_cd_hd
+  width: 100%
+  @include fl-cl
+  @include fl-sb
+  h5
+    font-family: $font-ave
+    font-weight: 600
+    letter-spacing: 0.03em
+    font-size: 1rem
+    @media(min-width: $md)
+      font-size: 1.25rem
+
+.dpd_ico
+  width: 1.5rem
+  height: 1.5rem
+  stroke-width: 3
+  color: $pri-col
+
+.bnf_cd_dpd
+  @include fl-cc
+  @include hover-fade
+
+.bnf_cd_con
+  display: grid
+  grid-template-rows: 0fr
+  transition: all 0.5s ease
+  width: 100%
+  p
+    overflow: hidden
+
+.bnf_cd_bd
+  font-family: $font-def
+  font-weight: 300
+  line-height: 1.4
+  letter-spacing: 0.03em
+  font-size: 0.875rem

@@ -1,0 +1,188 @@
+@import ../../../styles/_mixins
+
+.pricing
+  width: 100%
+  @include def-pdg
+  margin-bottom: 6rem
+  @media(min-width: $md)
+    margin-bottom: 7rem
+
+.ttl
+  text-transform: uppercase
+  font-family: $font-ave
+  font-weight: 700
+  letter-spacing: 0.2em
+  font-size: 0.8rem
+  color: $sec-col
+  margin-bottom: 0.5rem
+  @media(min-width: $md)
+    font-size: 0.875rem
+  @media(min-width: $lg)
+    font-size: 0.9rem
+
+.mttl
+  font-size: 2rem
+  font-family: $font-ave
+  font-weight: 500
+  line-height: 1.2
+  margin-bottom: 0.5rem
+  @media(min-width: $md)
+    width: 60%
+    font-size: 2.5rem
+  @media(min-width: $lg)
+    font-size: 3rem
+
+.sttl
+  font-family: $font-def
+  font-weight: 300
+  letter-spacing: 0.05em
+  line-height: 1.4
+  font-size: 0.8rem
+  color: $pri-col
+  margin-bottom: 0.5rem
+  @media(min-width: $md)
+    font-size: 0.875rem
+  @media(min-width: $lg)
+    font-size: 1rem
+
+.mode_sel
+  position: relative
+  width: max-content
+  margin: 0 auto
+  margin-bottom: 1rem
+  border-radius: 1.5rem
+  padding: 0.25rem
+  border: 1px solid $sec-col
+  background: $def-col
+
+.curr_mode_ind
+  position: absolute
+  left: 0.25rem
+  top: 0.25rem
+  width: 30vw
+  aspect-ratio: 2.875/1
+  background: $sec-col
+  border-radius: 1.5rem
+  max-width: 138px
+  z-index: 1
+  &[datatype="business"]
+    left: unset
+    right: 0.25rem
+
+.mode_grp
+  position: relative
+  z-index: 2
+  width: 100%
+  @include fl-cc
+  gap: 0.5rem
+
+.mode
+  cursor: pointer
+  width: 30vw
+  max-width: 138px
+  aspect-ratio: 2.875/1
+  border-radius: 1.5rem
+  @include p-scale
+  @include fl-cc
+  text-align: center
+  font-family: $font-ave
+  font-size: 0.975rem
+  font-weight: 500
+
+.plans_grid
+  width: 100%
+  overflow-x: auto
+  display: grid
+  grid-template-columns: repeat(3, 75vw)
+  grid-gap: 1rem
+  align-items: start
+  justify-content: start
+
+.pln
+  background: $alt-col
+  padding: 0.5rem
+  border-radius: 1.5rem
+  @include fl-cl
+  @include fl-c
+  gap: 1rem
+  position: relative
+  padding-top: 2rem
+  width: 100%
+
+.pln_img_wrp
+  width: 50%
+  aspect-ratio: 1/1
+
+.pln_img
+  width: 100%
+
+.pln_top
+  width: 100%
+  @include fl-cl
+  @include fl-c
+  gap: 0.5rem
+  // margin-bottom: 0.75rem
+
+.pln_title
+  font-family: $font-def
+  padding: 0.5em 1em
+  border-radius: 0.5rem
+  background: $sec-col
+  font-size: 0.875rem
+  text-align: center
+  font-weight: 500
+  letter-spacing: 0.03em
+  text-transform: uppercase
+
+.pln_desc
+  font-family: $font-def
+  font-weight: 300
+  font-size: 0.75rem
+  text-align: center
+
+.pln_cta
+  @include fl-cl
+  @include fl-c
+  gap: 0.5rem
+
+.pln_price
+  font-size: 2rem
+  font-weight: 500
+  font-family: $font-def
+  letter-spacing: 0.03em
+  i
+    font-style: normal
+    font-size: 0.8rem
+    font-weight: 400
+
+.pln_btt
+  width: 100%
+  @include fl-cl
+  @include fl-c
+  gap: 0.5rem
+
+.pln_det_grp
+  width: 100%
+  border-radius: 1rem
+  background: $def-col
+  padding: 0.5rem
+  font-size: 0.75rem
+
+.cat
+  width: 100%
+  @include fl-cl
+  @include fl-sb
+
+.pln_det_name
+  font-family: $font-muk
+  font-size: 0.875rem
+  font-weight: 500
+  letter-spacing: 0.03em
+
+.pln_det_list
+  list-style-type: none
+
+.dpd_ico
+  width: 1rem
+  height: 1rem
+  stroke-width: 3

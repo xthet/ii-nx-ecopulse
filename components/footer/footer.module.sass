@@ -1,0 +1,96 @@
+@import ../../styles/_mixins
+
+.footer
+  width: 100%
+  background: $pri-col
+  color: $def-col
+  padding: 1rem 0
+  @include def-pdg
+  @media(min-width: $md)
+    padding-top: 2rem
+    padding-bottom: 2rem
+  @media(min-width: $lg)
+    padding-top: 2.5rem
+    padding-bottom: 2.5rem
+
+.footer_con
+  width: 100%
+  @include fl-tl
+  gap: 2rem
+
+.lf
+  @include fl-tl
+  @include fl-c
+  gap: 1rem
+  width: 60%
+  @media(min-width: $vmd)
+    width: 40%
+
+.logo
+  width: 14.07vw
+  object-fit: cover
+  min-width: 6rem
+  max-width: 202.704px
+
+.body
+  margin-top: -0.5rem
+  font-size: 0.7rem
+  line-height: 1.4
+  max-width: 300px
+  @media(min-width: $md)
+    font-size: 0.8rem
+  @media(min-width: $lg)
+    font-size: 1rem
+
+.sub_links
+  @include fl-cl
+  gap: 0.5rem
+  span
+    font-size: 0.7rem
+    @media(min-width: $md)
+      font-size: 0.8rem
+    @media(min-width: $lg)
+      font-size: 1rem
+
+.ri
+  @include fl-tl
+  @include fl-c
+  gap: 1rem
+  width: 40%
+  @media(min-width: $vmd)
+    width: 60%
+    flex-direction: row
+    @include fl-tr
+    gap: 10vw
+
+.nav
+  @include fl-tl
+  @include fl-c
+  gap: 0.5rem
+  h5
+    font-size: 0.8rem
+    font-weight: 600
+    @media(min-width: $md)
+      margin-bottom: 1rem
+      font-size: 0.875rem
+    @media(min-width: $lg)
+      font-size: 1.1rem
+
+.nav_menu
+  @include fl-tl
+  @include fl-c
+  gap: 0.5rem
+
+.opt
+  font-size: 0.7rem
+  list-style-type: none
+  @media(min-width: $md)
+    font-size: 0.8rem
+  @media(min-width: $lg)
+    font-size: 1rem
+
+.contact
+  @extend .nav
+
+.contact_dets
+  @extend .opt

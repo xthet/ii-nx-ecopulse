@@ -1,0 +1,116 @@
+@import ../../styles/_mixins
+
+.nav
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  padding-top: 1rem
+  z-index: 500
+  padding-left: 0.5rem
+  padding-right: 0.5rem
+  @media(min-width: 600px)
+    padding-left: 1rem
+    padding-right: 1rem
+  @media(min-width: 1250px)
+    padding-left: 3rem
+    padding-right: 3rem
+  @media(min-width: 1440px)
+    padding-left: 5rem
+    padding-right: 5rem
+
+.nav_wrp
+  width: 100%
+  @include fl-cl
+  @include fl-c
+  // display: grid
+  // grid-template-columns: 0.4fr 2.5fr 0.7fr
+  // grid-gap: 0.5rem
+  // align-items: center
+  // justify-content: start
+  // justify-items: start
+  padding: 0.5rem 0.8rem
+  // background: rgba(9, 37, 60, 0.6)
+  background: rgba(0, 0, 0, 0.3)
+  backdrop-filter: blur(18px)
+  border-radius: 25px
+  transition: all 0.3s ease
+  // padding-top: 1rem
+  // padding-bottom: 1rem
+  // @media(min-width: $lg)
+  //   padding-top: 2.5rem
+  &[datatype="dpd_active"]
+    border-radius: 5px
+
+.mob_nav
+  width: 100%
+  @include fl-cl
+  @include fl-sb
+
+.no_bg
+  background: none
+  backdrop-filter: blur(0px)
+
+.home_link
+  @include fl-cl
+  outline: none
+  @include hover-fade
+
+.logo
+  width: 3.5vw
+  max-width: 84px
+  min-width: 1.5rem
+  object-fit: cover
+  @media(min-width: $lg)
+    max-width: 180px
+    width: 13.2vw
+
+.menu
+  @include fl-cr
+  gap: 0.8rem
+  flex: 1
+  font-family: $font-ave
+
+.menu_link
+  font-size: 0.8rem
+  color: $def-col
+  letter-spacing: 0.1em
+  text-transform: uppercase
+  font-weight: 500
+  @include hover-fade
+
+.contact_btn
+  background: $sec-col
+  border-radius: 25px
+  padding: 0.6em 1.2em
+  letter-spacing: 0.05em
+  @include hover-white
+
+  // text-transform: uppercase
+
+.nav_cta
+  @include fl-cr
+  @include hover-fade
+
+.ham_ico
+  width: 1.5rem
+  height: 1.5rem
+  stroke-width: 3
+  color: $def-col
+
+.drop_down
+  // padding: 0 1rem 1rem
+  display: grid
+  grid-template-rows: 0fr
+  transition: all 0.5s ease
+  width: 100%
+  div
+    overflow: hidden
+
+.mob_menu
+  @include fl-tl
+  @include fl-c
+  gap: 0.5rem
+  a
+    border-bottom: 1px solid $def-col
+    padding-bottom: 0.5rem

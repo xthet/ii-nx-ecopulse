@@ -1,0 +1,180 @@
+{
+	"residential": [
+		{
+			"title": "Basic (Mini Flat)",
+			"desc": "Entry-level solution for small households.",
+			"image": "/images/pl_basic_plan.png",
+			"price": "1,006,300",
+			"buy_link": "https://sandbox.flutterwave.com/pay/hnq5ko5heuyf",
+			"details": [
+				{
+					"name": "Components",
+					"list": [
+						"1 kVA Inverter",
+						"2.11 kWh storage (1 Tubular)",
+						"0.84 kWp of Panel (2 Units)",
+						"45A Charge Controller (MPPT)"
+					]
+				},
+				{
+					"name": "System Output",
+					"list": [
+						"<span>Daily energy generation of <i>2.5kWh</i></span>",
+						"Powers basic equipment"
+					]
+				},
+				{
+					"name": "Product Lifespan",
+					"list": ["Inverter 10 years", "Storage 4 years", "Panel 25 years"]
+				}
+			]
+		},
+		{
+			"title": "Standard (2 Bedroom Flat)",
+			"desc": "Ideal for medium-sized households and small businesses.",
+			"buy_link": "https://sandbox.flutterwave.com/pay/o5jhtvhbsv25",
+			"image": "/images/pl_standard_plan.png",
+			"price": "2,722,500",
+			"details": [
+				{
+					"name": "Components",
+					"list": [
+						"3.5 kVA Inverter",
+						"4 kWh storage (2 Tubular)",
+						"1.6 kWp of Panel (4 Units)",
+						"60A Charge Controller (MPPT)"
+					]
+				},
+				{
+					"name": "System Output",
+					"list": [
+						"<span>Daily energy generation of <i>5.04kWh</i></span>",
+						"Powers basic equipment & Water Heater "
+					]
+				},
+				{
+					"name": "Product Lifespan",
+					"list": ["Inverter 10 years", "Storage 4 years", "Panel 25 years"]
+				}
+			]
+		},
+		{
+			"title": "Premium (3 & 4 Bedroom Flat)",
+			"desc": "For large households and businesses with high energy demands.",
+			"image": "/images/pl_premium_plan.png",
+			"buy_link": "https://sandbox.flutterwave.com/pay/m4mshbjffcmm",
+			"price": "4,760,800",
+			"details": [
+				{
+					"name": "Components",
+					"list": [
+						"5 kVA Inverter",
+						"7.5 kWh storage (Lithium)",
+						"3.3 kWp of Panel (8 Units)",
+						"100A Charge Controller (MPPT)"
+					]
+				},
+				{
+					"name": "System Output",
+					"list": [
+						"<span>Daily energy generation of <i>10.08kWh</i></span>",
+						"Powers basic equipment & Water Heater "
+					]
+				},
+				{
+					"name": "Product Lifespan",
+					"list": ["Inverter 10 years", "Storage 10 years", "Panel 25 years"]
+				}
+			]
+		}
+	],
+	"business": [
+		{
+			"title": "Retail Power Plan",
+			"desc": "For retail shops, minimarts, and corner stores needing reliable power.",
+			"image": "/images/pl_retail_plan.png",
+			"price": "837,970",
+			"buy_link": "https://sandbox.flutterwave.com/pay/pzi09yxml5st",
+			"details": [
+				{
+					"name": "Components",
+					"list": [
+						"2kVA Sachet Inverter and charger inverter",
+						"1.8 kWh storage (1 Dry Cell)",
+						"0.84 kWp of Panel (2 Units)",
+						"45A Charge Controller (MPPT)"
+					]
+				},
+				{
+					"name": "System Output",
+					"list": [
+						"<span>Daily energy generation of <i>2.52kWh</i></span>",
+						"Powers lighting (4 x 40W), POS systems 35W, and fans (2 x 100W)."
+					]
+				},
+				{
+					"name": "Product Lifespan",
+					"list": ["Inverter 10 years", "Storage 4 years", "Panel 25 years"]
+				}
+			]
+		},
+		{
+			"title": "Medium Business Power Plan",
+			"desc": "Ideal for medium-sized businesses like supermarkets or pharmacies.",
+			"image": "/images/pl_medium_business_plan.png",
+			"buy_link": "https://sandbox.flutterwave.com/pay/zkc7ruxi2esc",
+			"price": "2,360,000",
+			"details": [
+				{
+					"name": "Components",
+					"list": [
+						"1.7 kVA Inverter",
+						"5.04 kWh storage (2 Tubular)",
+						"2.52 kWp of Panel (6 Units)",
+						"80A Charge Controller (MPPT)"
+					]
+				},
+				{
+					"name": "System Output",
+					"list": [
+						"<span>Daily energy generation of <i>7.56kWh</i></span>",
+						"Powers lighting (8 x 80W), Refrigerator (2  x 200W), POS systems 85W, and fans (3 x 150W)."
+					]
+				},
+				{
+					"name": "Product Lifespan",
+					"list": ["Inverter 10 years", "Storage 4 years", "Panel 25 years"]
+				}
+			]
+		},
+		{
+			"title": "Large Business Power Plan",
+			"desc": "Perfect for large businesses like restaurants or workshops.",
+			"image": "/images/pl_large_business_plan.png",
+			"buy_link": "https://sandbox.flutterwave.com/pay/jmhdvfka0p5q",
+			"price": "7,600,000",
+			"details": [
+				{
+					"name": "Components",
+					"list": [
+						"7.5 kVA Inverter",
+						"15 kWh storage (Lithium)",
+						"7.2 kWp of Panel (12 Units)",
+						"120A Charge Controller (MPPT)"
+					]
+				},
+				{
+					"name": "System Output",
+					"list": [
+						"<span>Daily energy generation of <i>21.6kWh</i></span>",
+						"Powers lighting point, Fan, Tv Screen, Chillers, Automatic door, CCTv, Laptop, Juicer, Microwaves."
+					]
+				},
+				{
+					"name": "Product Lifespan",
+					"list": ["Inverter 10 years", "Storage 10 years", "Panel 25 years"]
+				}
+			]
+		}
+	]
+}
