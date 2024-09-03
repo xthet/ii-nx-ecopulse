@@ -170,6 +170,7 @@
   font-size: 0.75rem
   text-align: center
   line-height: 1.4
+  letter-spacing: 0.05em
 
 .pln_cta
   @include fl-cl
@@ -344,8 +345,12 @@
   font-weight: 400
   line-height: 1.4
   @media(min-width: $md)
+    font-family: $font-def
     font-size: 0.875rem
     width: 60%
+    font-weight: 300
+  @media(min-width: $lg)
+    font-size: 0.925rem
 
 .cus_cta_wrp
   width: 100%

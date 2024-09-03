@@ -31,18 +31,18 @@ export default function Footer() {
 						<div className={s.md_ft_con}>
 							<div className={s.md_ft_lf}>
 								<div className={s.md_ft_hdg}>
-									<div className={s.md_logo_wrp}>
+									<Link href={"/"} className={s.md_logo_wrp}>
 										<img
 											src="/images/lg_logo.svg"
 											alt="fl_logo"
 											className={s.md_logo}
 										/>
-									</div>
+									</Link>
 									<p
 										className={s.md_ft_bd}
 									>{`At the forefront of the solar energy revolution, setting the pace with high quality products, cutting-edge features and real-time insights. Ecopulse pioneers the future of sustainable energy`}</p>
 									<Link href={"/about-us"} className={s.md_hdg_cta}>
-										<p>More about us</p> <span />
+										<p>More about us...</p>
 									</Link>
 								</div>
 
@@ -95,7 +95,13 @@ export default function Footer() {
 							</div>
 						</div>
 					</div>
-					{/* <div></div> */}
+					<div className={s.bg_logo_wrp}>
+						<img
+							src="/images/lg_footer_logo.svg"
+							alt="bg_logo"
+							className={s.bg_logo}
+						/>
+					</div>
 				</div>
 			) : (
 				<div className={s.ft_wrp}>

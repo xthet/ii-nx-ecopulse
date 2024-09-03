@@ -25,7 +25,7 @@ export default function Pricing() {
 		scrollRef.current!.scrollBy(120, 0)
 	}
 	return (
-		<section className={s.pricing}>
+		<section className={s.pricing} id={"plans"}>
 			<h5 className={s.ttl}>Product Plans</h5>
 			<h2 className={s.mttl}>
 				Flexible Power Plans for Everyone
