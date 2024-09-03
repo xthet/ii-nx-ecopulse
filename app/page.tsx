@@ -12,6 +12,8 @@ import learns from "@/resources/json/learns.json"
 import ChevUp from "@/public/icons/chev_up"
 import services from "@/resources/json/services.json"
 import Pricing from "@/components/home_page/pricing"
+import ArrowRight from "@/public/icons/arrow_right"
+import ArrowDown from "@/public/icons/arrow_down"
 export default function Home() {
 	const media_lg = useMediaQuery({ query: "(min-width: 1000px)" })
 	const [ShowBNF, setShowBNF] = useState(0)
@@ -28,11 +30,23 @@ export default function Home() {
 							our cutting-edge solar technology
 						</p>
 					) : (
-						<p className={s.mh_shd}>
-							Join the solar revolution and power your future with clean,
-							renewable energy.
-						</p>
+						<>
+							<p className={s.mh_shd}>
+								Join the solar revolution and power your future with clean,
+								renewable energy.
+							</p>
+
+							<div className={s.hr_cta}>
+								<Link href={"#plans"} className={s.hr_cta_link}>
+									<span className={s.hr_cta_bd}>Get Started</span>
+									<span className={s.hr_link_wrp}>
+										<ArrowRight className={s.hr_link_ico} />
+									</span>
+								</Link>
+							</div>
+						</>
 					)}
+
 					{/* {media_lg && <div className={s.sep} />} */}
 				</div>
 				{!media_lg && (
@@ -41,6 +55,15 @@ export default function Home() {
 							Power your home and business with clean, renewable energy, with
 							our cutting-edge solar technology
 						</p>
+
+						<div className={s.hr_scr}>
+							<div className={s.hr_scr_wrp}>
+								<span className={s.arr_bd}>Scroll</span>
+								<span className={s.arr_dn_wrp}>
+									<ArrowDown className={s.arr_dn_ico} />
+								</span>
+							</div>
+						</div>
 					</div>
 				)}
 			</section>

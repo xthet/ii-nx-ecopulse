@@ -55,9 +55,78 @@
     font-size: 1.2rem
     margin-bottom: 1rem
 
+.mh_btt
+  @include fl-tl
+  @include fl-c
+  gap: 0.25rem
+
 .mh_sbhd
   @extend .mh_shd
+
+.hr_scr
+  width: 100%
+  @include fl-cr
   margin: 0 0 1.5rem
+
+.hr_scr_wrp
+  @include fl-cr
+  gap: 0.5rem
+  opacity: 0.8
+  animation: bounce 1.2s infinite
+
+@keyframes bounce
+  0%
+    transform: translateY(0)
+  50%
+    transform: translateY(-0.75rem)
+  100%
+    transform: translateY(0)
+
+.arr_bd
+  @extend .hr_cta_bd
+  color: $def-col
+
+.arr_dn_wrp
+  @include fl-cc
+
+.arr_dn_ico
+  width: 0.85rem
+  height: 0.85rem
+  stroke-width: 4
+  color: $def-col
+
+.hr_cta
+  margin-top: 0.75rem
+
+.hr_cta_link
+  opacity: 0.95
+  background: $def-col
+  border-radius: 1.5rem
+  padding: 0.25rem
+  padding-left: 0.775rem
+  @include fl-cl
+  gap: 1rem
+  width: max-content
+  @include hover-fade
+
+.hr_cta_bd
+  font-family: $font-otf
+  font-size: 0.875rem
+  font-weight: 500
+  letter-spacing: 0.03em
+
+.hr_link_wrp
+  @include fl-cc
+  padding: 0.5rem
+  background: $sec-col
+  border-radius: 50%
+
+.hr_link_ico
+  width: 0.85rem
+  height: 0.85rem
+  stroke-width: 3
+  position: relative
+  left: 0.095rem
 
 .sep
   height: 4px
