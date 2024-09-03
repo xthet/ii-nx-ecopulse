@@ -17,6 +17,8 @@
   margin-bottom: 0.5rem
   @media(min-width: $md)
     font-size: 0.875rem
+    width: 100%
+    text-align: center
   @media(min-width: $lg)
     font-size: 0.9rem
 
@@ -29,8 +31,20 @@
   @media(min-width: $md)
     width: 60%
     font-size: 2.5rem
+    margin: 0 auto
+    margin-bottom: 1rem
+    text-align: center
   @media(min-width: $lg)
     font-size: 3rem
+
+.asep
+  height: 4px
+  width: 80%
+  background: $sec-col
+  margin-top: 1rem
+  @media(min-width: $md)
+    margin: 0 auto
+    margin-top: 1rem
 
 .sttl
   font-family: $font-def
@@ -39,8 +53,10 @@
   line-height: 1.4
   font-size: 0.8rem
   color: $pri-col
-  margin-bottom: 0.5rem
+  margin-bottom: 2rem
   @media(min-width: $md)
+    width: 100%
+    text-align: center
     font-size: 0.875rem
   @media(min-width: $lg)
     font-size: 1rem
@@ -49,7 +65,7 @@
   position: relative
   width: max-content
   margin: 0 auto
-  margin-bottom: 1rem
+  margin-bottom: 2rem
   border-radius: 1.5rem
   padding: 0.25rem
   border: 1px solid $sec-col
@@ -85,21 +101,33 @@
   @include p-scale
   @include fl-cc
   text-align: center
-  font-family: $font-ave
-  font-size: 0.975rem
-  font-weight: 500
+  font-family: $font-otf
+  font-size: 1rem
+  font-weight: 700
+  @media(min-width: $md)
+    font-size: 1.125rem
 
 .plans_grid
   width: 100%
+  scrollbar-width: none
   overflow-x: auto
   display: grid
-  grid-template-columns: repeat(3, 75vw)
+  grid-template-columns: repeat(3, min(75vw, 300px))
   grid-gap: 1rem
   align-items: start
   justify-content: start
+  margin: 0 auto
+  margin-bottom: 1rem
+  @media(min-width: $lg)
+    justify-content: center
+
+.plans_grid::-webkit-scrollbar
+  width: 0
+  height: 0
+  display: none
 
 .pln
-  background: $alt-col
+  background: $sub-col
   padding: 0.5rem
   border-radius: 1.5rem
   @include fl-cl
@@ -124,21 +152,24 @@
   // margin-bottom: 0.75rem
 
 .pln_title
-  font-family: $font-def
+  font-family: $font-otf
   padding: 0.5em 1em
   border-radius: 0.5rem
   background: $sec-col
   font-size: 0.875rem
   text-align: center
-  font-weight: 500
-  letter-spacing: 0.03em
+  font-weight: 700
+  letter-spacing: 0.08em
   text-transform: uppercase
+  @media(min-width: $md)
+    font-size: 0.95rem
 
 .pln_desc
   font-family: $font-def
   font-weight: 300
   font-size: 0.75rem
   text-align: center
+  line-height: 1.4
 
 .pln_cta
   @include fl-cl
@@ -146,14 +177,24 @@
   gap: 0.5rem
 
 .pln_price
+  width: 100%
   font-size: 2rem
-  font-weight: 500
-  font-family: $font-def
-  letter-spacing: 0.03em
+  font-weight: 800
+  font-family: $font-otf
+  letter-spacing: 0.05em
+  border-bottom: 4px double $sec-col
+  border-top: 4px double $sec-col
+  padding: 0.125em 0
+  text-align: center
   i
     font-style: normal
-    font-size: 0.8rem
-    font-weight: 400
+    font-size: 0.95rem
+    font-weight: 500
+
+.sep
+  width: 100%
+  height: 1px
+  background: $sec-col
 
 .pln_btt
   width: 100%
@@ -174,15 +215,167 @@
   @include fl-sb
 
 .pln_det_name
-  font-family: $font-muk
+  font-family: $font-otf
   font-size: 0.875rem
-  font-weight: 500
-  letter-spacing: 0.03em
+  font-weight: 600
+  letter-spacing: 0.05em
+  @media(min-width: $md)
+    font-size: 0.9rem
 
 .pln_det_list
-  list-style-type: none
+  // list-style-type: none
+  display: grid
+  grid-template-rows: 0fr
+  transition: all 0.5s ease
+  width: 100%
+  div
+    overflow: hidden
+
+.dpd_wrp
+  @include fl-cc
+  @include hover-fade
 
 .dpd_ico
   width: 1rem
   height: 1rem
   stroke-width: 3
+
+.li_con
+  width: 100%
+  @include fl-tl
+  @include fl-c
+  gap: 0.5rem
+  padding-left: 0.875rem
+
+.pln_det
+  width: 100%
+  font-family: $font-otf
+  font-size: 0.75rem
+  letter-spacing: 0.03em
+  font-weight: 400
+  padding-bottom: 0.5em
+  line-height: 1.3
+  @media(min-width: $md)
+    font-size: 0.825rem
+  i
+    color: $sec-col
+    font-weight: 500
+
+.pln_buy
+  width: 100%
+  border-radius: 1.5rem
+  background: linear-gradient(160deg, rgba(255, 161, 54, 1) 0%, rgba(7, 30, 49, 1) 100%)
+  color: $def-col
+  @include fl-cc
+  @include hover-scale
+  padding: 0.6em 1.2em
+
+.pln_btn
+  // text-transform: uppercase
+  font-family: $font-otf
+  font-size: 0.875rem
+  font-weight: 500
+  letter-spacing: 0.08em
+  text-decoration: none
+
+.scr
+  width: 100%
+  @include fl-cr
+  padding: 0.5rem
+  margin-bottom: 1rem
+
+.scr_wrp
+  @include fl-cc
+  gap: 0.5rem
+
+.dir_wrp
+  border-radius: 50%
+  @include hover-fade
+  background: $sec-col
+  @include fl-cc
+  width: 2.25rem
+  height: 2.25rem
+  overflow: hidden
+  &:first-child
+    background: none
+    border: 1px solid $vue-col
+    svg
+      margin-right: 0.125rem
+  &:last-child
+    svg
+      margin-left: 0.125rem
+
+.dir_ico
+  float: right
+  width: 1.25rem
+  height: 1.25rem
+  stroke-width: 3
+
+.cus
+  width: 100%
+  max-width: 948px
+  margin: 0 auto
+  background: $alt-col
+  padding: 0.5rem
+  border-radius: 1rem
+  @include fl-tl
+  @include fl-c
+  gap: 0.75rem
+  @media(min-width: $md)
+    padding: 1rem
+
+.cus_hd
+  background: $sec-col
+  color: $pri-col
+  text-transform: uppercase
+  font-family: $font-def
+  font-weight: 600
+  letter-spacing: 0.05em
+  font-size: 0.875rem
+  border-radius: 0.5rem
+  padding: 0.5em 1em
+  @media(min-width: $md)
+    font-size: 0.95rem
+
+.cus_bd
+  font-family: $font-otf
+  font-size: 0.775rem
+  letter-spacing: 0.03em
+  font-weight: 400
+  line-height: 1.4
+  @media(min-width: $md)
+    font-size: 0.875rem
+    width: 60%
+
+.cus_cta_wrp
+  width: 100%
+  @include fl-cr
+
+.cus_cta
+  outline: none
+  border: none
+  background: $def-col
+  border-radius: 1.5rem
+  padding: 0.25rem
+  padding-left: 1rem
+  @include fl-cl
+  gap: 1.5rem
+  @include hover-fade
+
+.cus_cta_bd
+  font-weight: 700
+  font-family: $font-otf
+  font-size: 0.85rem
+  letter-spacing: 0.03em
+  color: $pri-col
+
+.phone_ico
+  width: 1rem
+  height: 1rem
+  fill: $pri-col
+
+.phone_ico_wrp
+  background: $sec-col
+  border-radius: 50%
+  @include fl-cc
+  padding: 0.5rem

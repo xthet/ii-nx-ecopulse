@@ -1,8 +1,8 @@
 {
 	"residential": [
 		{
-			"title": "Basic (Mini Flat)",
-			"desc": "Entry-level solution for small households.",
+			"title": "Basic",
+			"desc": "Entry-level solution for small households e.g. Mini-Flats.",
 			"image": "/images/pl_basic_plan.png",
 			"price": "1,006,300",
 			"buy_link": "https://sandbox.flutterwave.com/pay/hnq5ko5heuyf",
@@ -30,8 +30,8 @@
 			]
 		},
 		{
-			"title": "Standard (2 Bedroom Flat)",
-			"desc": "Ideal for medium-sized households and small businesses.",
+			"title": "Standard",
+			"desc": "Ideal for medium-sized households and small businesses such as 2-bedroom flats.",
 			"buy_link": "https://sandbox.flutterwave.com/pay/o5jhtvhbsv25",
 			"image": "/images/pl_standard_plan.png",
 			"price": "2,722,500",
@@ -59,8 +59,8 @@
 			]
 		},
 		{
-			"title": "Premium (3 & 4 Bedroom Flat)",
-			"desc": "For large households and businesses with high energy demands.",
+			"title": "Premium",
+			"desc": "For large households and businesses with high energy demands, such as 3 & 4 Bedroom Flats",
 			"image": "/images/pl_premium_plan.png",
 			"buy_link": "https://sandbox.flutterwave.com/pay/m4mshbjffcmm",
 			"price": "4,760,800",
@@ -90,7 +90,7 @@
 	],
 	"business": [
 		{
-			"title": "Retail Power Plan",
+			"title": "Retail",
 			"desc": "For retail shops, minimarts, and corner stores needing reliable power.",
 			"image": "/images/pl_retail_plan.png",
 			"price": "837,970",
@@ -119,7 +119,7 @@
 			]
 		},
 		{
-			"title": "Medium Business Power Plan",
+			"title": "Medium",
 			"desc": "Ideal for medium-sized businesses like supermarkets or pharmacies.",
 			"image": "/images/pl_medium_business_plan.png",
 			"buy_link": "https://sandbox.flutterwave.com/pay/zkc7ruxi2esc",
@@ -148,7 +148,7 @@
 			]
 		},
 		{
-			"title": "Large Business Power Plan",
+			"title": "Large",
 			"desc": "Perfect for large businesses like restaurants or workshops.",
 			"image": "/images/pl_large_business_plan.png",
 			"buy_link": "https://sandbox.flutterwave.com/pay/jmhdvfka0p5q",
