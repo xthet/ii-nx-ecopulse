@@ -26,13 +26,13 @@ export default function Pricing() {
 	}
 	return (
 		<section className={s.pricing} id={"plans"}>
-			<h5 className={s.ttl}>Product Plans</h5>
+			<h5 className={s.ttl}>Power Plans</h5>
 			<h2 className={s.mttl}>
 				Flexible Power Plans for Everyone
 				<div className={s.asep}></div>
 			</h2>
 			<p className={s.sttl}>
-				Compare our product plans to find the perfect match for your energy
+				Compare our power plans to find the perfect match for your energy
 				requirements.
 			</p>
 
