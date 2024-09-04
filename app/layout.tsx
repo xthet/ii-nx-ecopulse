@@ -1,7 +1,7 @@
 import Layout from "@/components/layout"
 import "@/styles/globals.sass"
 import type { Metadata } from "next"
-import { Outfit, Poppins } from "next/font/google"
+import { Outfit } from "next/font/google"
 
 export const metadata: Metadata = {
 	title: "Ecopulse Technologies",
@@ -12,15 +12,8 @@ export const metadata: Metadata = {
 const outfit = Outfit({
 	display: "swap",
 	subsets: ["latin"],
-	variable: "--font-otf",
-	weight: ["300", "400", "500", "600", "700", "800", "900"],
-})
-
-const poppins = Poppins({
-	display: "swap",
-	subsets: ["latin"],
 	variable: "--font-def",
-	weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+	weight: ["300", "400", "500", "600", "700", "800", "900"],
 })
 
 export default function RootLayout({
@@ -29,7 +22,7 @@ export default function RootLayout({
 	children: React.ReactNode
 }>) {
 	return (
-		<html lang="en" className={`${outfit.variable} ${poppins.variable}`}>
+		<html lang="en" className={`${outfit.variable}`}>
 			<body>
 				<Layout>{children}</Layout>
 			</body>

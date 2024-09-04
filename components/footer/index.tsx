@@ -88,9 +88,21 @@ export default function Footer() {
 											<p>52 Club Road, Yaba</p>
 										</div>
 									</div>
-									<span className={s.copyright}>
-										© 2024 — Ecopulse Technologies. All Rights Reserved.
-									</span>
+									<div className={s.ft_btt}>
+										<span className={s.ppol_grp}>
+											<Link href={"/privacy-policy"} className={s.ppol_link}>
+												Privacy Policy
+											</Link>
+											<span>•</span>
+											<Link href={"/terms-of-use"} className={s.ppol_link}>
+												Terms of Use
+											</Link>
+										</span>
+
+										<span className={s.copyright}>
+											© 2024 — Ecopulse Technologies. All Rights Reserved.
+										</span>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -170,6 +182,7 @@ export default function Footer() {
 							<Link href={"/privacy-policy"} className={s.ppol_link}>
 								Privacy Policy
 							</Link>
+							<span>•</span>
 							<Link href={"/terms-of-use"} className={s.ppol_link}>
 								Terms of Use
 							</Link>
