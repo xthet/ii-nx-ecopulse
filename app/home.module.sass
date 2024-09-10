@@ -202,10 +202,20 @@
   font-weight: 700
   font-size: 2rem
   colore: $pri-col
+  @media(min-width: $vlg)
+    font-size: 2.125rem
+  @media(min-width: $vvlg)
+    font-size: 2.25rem
 
 .svc_ico
   width: 2rem
   height: 2rem
+  @media(min-width: $vlg)
+    width: 2.25rem
+    height: 2.25rem
+  @media(min-width: $vvlg)
+    width: 2.5rem
+    height: 2.5rem
 
 .svc_bhd
   font-family: $font-ave
@@ -217,6 +227,10 @@
   margin-bottom: 0.75rem
   @media(min-width: $lg)
     width: 90%
+  @media(min-width: $vlg)
+    font-size: 1.75rem
+  @media(min-width: $vvlg)
+    font-size: 1.875rem
 
 .svc_bd
   font-family: $font-def
@@ -228,6 +242,11 @@
     font-size: 0.8rem
   @media(min-width: $lg)
     margin-top: auto
+    font-size: 0.875rem
+  @media(min-width: $vlg)
+    font-size: 0.95rem
+  @media(min-width: $vvlg)
+    font-size: 1rem
 
 .benefits
   width: 100%
@@ -384,3 +403,11 @@
   line-height: 1.4
   letter-spacing: 0.06em
   font-size: 0.85rem
+  @media(min-width: $md)
+    font-size: 0.875rem
+  @media(min-width: $lg)
+    font-size: 0.95rem
+  @media(min-width: $vlg)
+    font-size: 1.125rem
+  @media(min-width: $vvlg)
+    font-size: 1.25rem
