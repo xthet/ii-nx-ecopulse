@@ -175,7 +175,7 @@ export default function Pricing() {
 			)}
 
 			<div className={s.cus}>
-				<div className={s.cus_hd}>Custom</div>
+				{/* <div className={s.cus_hd}>Custom</div> */}
 				<p className={s.cus_bd}>
 					{
 						"If these plans don't fit, let's create one that suits. Customize your power plan for a perfect fit, bigger or smaller"

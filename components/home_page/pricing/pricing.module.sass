@@ -21,6 +21,10 @@
     text-align: center
   @media(min-width: $lg)
     font-size: 0.9rem
+  @media(min-width: $vlg)
+    font-size: 1rem
+  @media(min-width: $vvlg)
+    font-size: 1.5rem
 
 .mttl
   font-size: 2rem
@@ -36,6 +40,8 @@
     text-align: center
   @media(min-width: $lg)
     font-size: 3rem
+  @media(min-width: $vvlg)
+    font-size: 4rem
 
 .asep
   height: 4px
@@ -60,6 +66,10 @@
     font-size: 0.875rem
   @media(min-width: $lg)
     font-size: 1rem
+  @media(min-width: $vlg)
+    font-size: 1.25rem
+  @media(min-width: $vvlg)
+    font-size: 1.5rem
 
 .mode_sel
   position: relative
@@ -106,6 +116,8 @@
   font-weight: 700
   @media(min-width: $md)
     font-size: 1.125rem
+  @media(min-width: $vvlg)
+    font-size: 1.25rem
 
 .plans_grid
   width: 100%
@@ -163,6 +175,10 @@
   text-transform: uppercase
   @media(min-width: $md)
     font-size: 0.95rem
+  @media(min-width: $lg)
+    font-size: 0.975rem
+  @media(min-width: $vvlg)
+    font-size: 1.125rem
 
 .pln_desc
   font-family: $font-def
@@ -171,6 +187,12 @@
   text-align: center
   line-height: 1.4
   letter-spacing: 0.05em
+  @media(min-width: $md)
+    font-size: 0.85rem
+  @media(min-width: $lg)
+    font-size: 0.875rem
+  @media(min-width: $vvlg)
+    font-size: 1rem
 
 .pln_cta
   @include fl-cl
@@ -187,6 +209,8 @@
   border-top: 4px double $sec-col
   padding: 0.125em 0
   text-align: center
+  @media(min-width: $vvlg)
+    font-size: 2.5rem
   i
     font-style: normal
     font-size: 0.95rem
@@ -258,6 +282,12 @@
   line-height: 1.3
   @media(min-width: $md)
     font-size: 0.825rem
+  @media(min-width: $lg)
+    font-size: 0.875rem
+  @media(min-width: $vlg)
+    font-size: 0.925rem
+  @media(min-width: $vvlg)
+    font-size: 1.125rem
   i
     color: $sec-col
     font-weight: 500
@@ -278,6 +308,10 @@
   font-weight: 500
   letter-spacing: 0.08em
   text-decoration: none
+  @media(min-width: $lg)
+    font-size: 0.9rem
+  @media(min-width: $vvlg)
+    font-size: 1rem
 
 .scr
   width: 100%
@@ -316,14 +350,15 @@
   width: 100%
   max-width: 948px
   margin: 0 auto
-  background: $alt-col
-  padding: 0.5rem
+  background: $pri-col
+  padding: 1rem
   border-radius: 1rem
-  @include fl-tl
-  @include fl-c
-  gap: 0.75rem
+  @include fl-cl
+  @include fl-sb
+  // @include fl-c
+  gap: 1rem
   @media(min-width: $md)
-    padding: 1rem
+    padding: 2rem
 
 .cus_hd
   background: $sec-col
@@ -337,24 +372,33 @@
   padding: 0.5em 1em
   @media(min-width: $md)
     font-size: 0.95rem
+  @media(min-width: $lg)
+    font-size: 0.975rem
+  @media(min-width: $vvlg)
+    font-size: 1.25rem
 
 .cus_bd
   font-family: $font-def
-  font-size: 0.775rem
+  font-size: clamp(0.775rem, 1.3vw, 1.5rem)
   letter-spacing: 0.03em
   font-weight: 400
   line-height: 1.4
-  @media(min-width: $md)
-    font-family: $font-def
-    font-size: 0.875rem
-    width: 60%
-    // font-weight: 300
-  @media(min-width: $lg)
-    letter-spacing: 0.05em
-    font-size: 0.925rem
+  color: $def-col
+  width: 70%
+  // @media(min-width: $md)
+  //   font-family: $font-def
+  //   font-size: 0.875rem
+  //   width: 60%
+  // @media(min-width: $lg)
+  //   letter-spacing: 0.05em
+  //   font-size: 0.925rem
+  // @media(min-width: $vlg)
+  //   font-size: 0.975rem
+  // @media(min-width: $vvlg)
+  //   font-size: 1rem
 
 .cus_cta_wrp
-  width: 100%
+  // width: 100%
   @include fl-cr
 
 .cus_cta
@@ -374,6 +418,12 @@
   font-size: 0.85rem
   letter-spacing: 0.03em
   color: $pri-col
+  width: max-content
+  white-space: nowrap
+  @media(min-width: $vlg)
+    font-size: 0.975rem
+  @media(min-width: $vvlg)
+    font-size: 1rem
 
 .phone_ico
   width: 1rem
